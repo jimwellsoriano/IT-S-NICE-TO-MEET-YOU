@@ -1,0 +1,1556 @@
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        height: 3000px;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    /* HEADER SECTION */
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 85px;
+        position: relative;
+        z-index: 10;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        padding: 0 25px;
+        transition: background-color 0.3s ease, opacity 0.3s ease, height 0.3s ease;
+    }
+
+
+    header.scrolled{
+        background-color: rgb(33, 37, 41);
+        opacity: 0.98;
+        height: 65px;
+    }
+    
+    .nav-for-logo{
+        width: 350px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-for-logo img{
+        height: 35px;
+    }
+
+    header.scrolled .nav-for-logo img{
+        height: 28px;
+    }
+
+    .nav-for-link{
+        flex-shrink: 0;
+    }
+
+    .nav-for-link a{
+        text-decoration: none;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        font-size: 1em;
+        color: rgb(255, 255, 255);
+        margin-right: 20px;
+        flex-shrink: 0;
+        transition: color 0.2s ease-in;
+    }
+
+    header.scrolled .nav-for-link a.is-toggled{
+        color: rgb(255, 200, 0);
+    }
+    .nav-for-link a:hover{
+        color: rgb(255, 200, 0);
+    }
+
+    .nav-for-link button{
+        padding: 8px 15px;
+        background-color: transparent;
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 8px;
+        color: white;
+        display: none;
+        align-items: center;
+        cursor: pointer;
+    }
+    .nav-for-link button i{
+        margin-right: 5px;
+    }
+
+            /* HOME SECTION */
+
+    .home-section{
+        background-image: url(images/header-bg.jpg);
+        height: 700px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color:rgb(255, 255, 255);
+    }
+
+    .home-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-for-logo {
+        width: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    header {
+        padding-left: 0;
+    }
+    .nav-for-link button {
+        display: none;
+    }
+    .Welcome-To-Our-Studio {
+        font-family: "Roboto Slab", serif;
+        font-style: italic;
+        font-size: 38px;
+        margin-bottom: 35px;
+        font-weight: 400;
+        margin-top: 50px;
+    }
+    .NICE-TO-MEET-YOU {
+        font-family: "Montserrat", sans-serif;
+        font-size: 4.50em;
+        font-weight: 700;
+        text-align: center;
+        line-height: 1;
+        margin-bottom: 80px;
+    }
+    .tell-me-more {
+        height: 70px;
+        width: 230px;
+        border-radius: 10px; 
+        border: none;
+        background-color: rgb(255, 200, 0);
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+     /* SERVICE -SECTION */
+
+     .service-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .service{
+        font-family: "Montserrat", sans-serif;
+        font-size: 2.10em;
+        color: rgb(33, 37, 41);
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .service-description-header{
+        font-family: "Roboto Slab", serif;
+        font-style: italic;
+        font-size: 1em;
+        color: rgb(108, 117, 125);
+        margin-bottom: 50px;
+        max-width: 220px; 
+        text-align: center;
+    }
+
+    .child-container{
+        flex-wrap: wrap;
+    }
+
+    .service-logo-container{
+        height: 120px;
+        width: 120px;
+        background-color: rgb(255, 200, 0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 60px;
+        margin-bottom: 15px;
+    }
+
+    .service-logo-container i {
+        color: white;
+        font-size: 4em;
+    }
+
+    .service-title{
+        font-family: Montserrat, sans-serif;
+        color: rgb(33, 37, 41);
+        margin-bottom: 15px;
+    }
+
+    .description-service{
+        color: rgb(108, 117, 125);
+        font-size: 1em;
+        font-family: "Roboto Slab", serif;
+        line-height: 2;
+        text-align: center;
+    }
+
+    .child-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+      /* SERVICE -SECTION */
+
+  .service-container,
+  .porfolio-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    }
+
+    .service,
+    .portfolio,
+    .about{
+        font-family: "Montserrat", sans-serif;
+        font-size: 2.10em;
+        color: rgb(33, 37, 41);
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .service-description-header,
+    .portfolio-description-header,
+    .about-description-header{
+        font-family: "Roboto Slab", serif;
+        font-style: italic;
+        font-size: 1em;
+        color: rgb(108, 117, 125);
+        margin-bottom: 50px;
+        max-width: none;
+    }
+
+    .service-logo-container{
+        height: 120px;
+        width: 120px;
+        background-color: rgb(255, 200, 0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 60px;
+        margin-bottom: 15px;
+    }
+
+    .service-logo-container i {
+        color: white;
+        font-size: 4em;
+    }
+
+    .service-title{
+        font-family: Montserrat, sans-serif;
+        color: rgb(33, 37, 41);
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .description-service{
+        color: rgb(108, 117, 125);
+        font-size: 1em;
+        font-family: "Roboto Slab", serif;
+        line-height: 2;
+        text-align: center;
+        
+    }
+
+    .child-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+        padding: 0 15px;
+    }
+
+    .parent-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        justify-content: center;
+        column-gap: 20px;
+    }
+
+    .service-section{
+        padding: 100px 0;
+    }
+
+
+      /* PORTFOLIO SECTION DESIGN */
+
+    .portfolio-section{
+        background-color: rgb(248, 249, 250);
+        padding: 80px 0;
+        /* background-color: lightblue; */
+    }
+
+    .portfolio-child-container img{
+        max-width: 350px;
+        margin-bottom: -4px;
+    }
+
+    .portfolio-child-container article{
+        background-color: white;
+        height: 70px;
+        padding-top: 10px;
+    }
+
+    .porfolio-img-title{
+        font-family: Montserrat, sans-serif; 
+        text-align: center;
+        margin-bottom: 10px;    
+        color: rgb(33, 37, 41);
+    }
+
+    .portfolio-img-description{
+        font-style: italic;
+        font-weight: 400;
+        color: rgb(108, 117, 125);
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .porfolio-parent-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 28px;
+        row-gap: 40px;
+    }
+
+    .img-container{
+        position: relative;
+    }
+
+    .img-child{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;     
+        background-color: rgba(255, 200, 0, 0.9);
+        opacity: 0;   
+        transition: opacity 0.3s ease-in-out;
+        cursor: pointer;
+    }
+
+    .img-child:hover{
+        opacity: 1;
+    }
+
+    .img-child i{
+        font-size: 4.50em;
+        color: white;
+    }
+
+    /* ABOUT SECTION */
+
+
+    .about-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 80px 0;
+    }
+    .timeline-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 80px;
+    }
+
+    .timeline-title{
+        font-family: Montserrat, sans-serif; 
+        color: rgb(33, 37, 41);
+        font-size: 2.50em;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .timeline-head-description{
+        font-family: "Roboto Slab", serif;
+        color: rgb(108, 117, 125);
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
+
+    .timeline-body-container{
+        margin: 0 auto;
+        max-width: 1000px;
+        padding: 25px;
+        display: grid;
+        grid-template-columns: 1fr 3px 1fr; 
+    }
+
+    .timeline-body-conponent{
+        padding: 0 20px 20px 20px;
+        text-align: end;
+        margin-right: 80px;
+       
+    }
+
+    .timeline-body-conponent-right{
+        padding: 0 20px 20px 20px;
+        text-align: start;
+        margin-left: 80px;
+       
+    }
+
+    .timeline-date{
+        font-family: Montserrat, sans-serif; 
+        color: rgb(33, 37, 41);
+        margin-bottom: 7px;
+    }
+
+    .timeline-tile{
+        font-family: Montserrat, sans-serif; 
+        color: rgb(33, 37, 41);
+        margin-bottom: 10px;
+    }
+
+    .timeline-paragraph{
+        font-family: "Roboto Slab", serif;
+        font-size: 1em;
+        color: rgb(108, 117, 125);
+        line-height: 1.5;
+        margin-bottom: 100px;
+    }
+
+    .middle-timeline{
+        position: relative;
+        background-color: rgb(233, 236, 239);
+    }
+
+    .timeline-point img{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        border: 7px solid rgb(233, 236, 239);
+    }
+
+    .timeline-last-part{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
+        border: 7px solid rgb(233, 236, 239);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 1.2em;
+        background-color: rgba(255, 200, 0, 0.9);
+        color: white;
+        font-family: Montserrat, sans-serif; 
+        
+    }
+
+    .timeline-last-part span{
+        max-width: 100px;
+    }
+
+
+    /* TEAM SECTION DESIGN */
+
+    .team-section{
+        padding: 80px 0;
+        background-color: rgb(248, 249, 250);
+    }
+
+   .team-body-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 8em;
+   }
+
+   .team-parent-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+   }
+    .team-title{
+        font-family: Montserrat, sans-serif; 
+        color: rgb(33, 37, 41);
+        font-size: 2.50em;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .team-head-description{
+        font-family: "Roboto Slab", serif;
+        color: rgb(108, 117, 125);
+        font-size: 1em;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .team-parent-container img{
+        height: 230px;
+        border-radius: 50%;
+        border: 10px solid rgb(233, 236, 239);
+        margin-bottom: 20px;
+    }
+
+    .team-name{
+        color: rgb(33, 37, 41);
+        font-family: Montserrat, sans-serif; 
+        font-size: 1.5em;
+        margin-bottom: 5px;
+    }
+
+    .team-position{
+        font-family: "Roboto Slab", serif;
+        color: rgb(108, 117, 125);
+        margin-bottom: 20px;
+    }
+
+    .team-socmed-container{
+        display: grid;
+        grid-template-columns: repeat(3, 38px);
+        column-gap: 20px;
+        margin-left: 15px;
+    }
+
+    .team-socmed-container div{
+        height: 38px;
+        width: 38px;
+        border-radius: 50%;
+        background-color: rgb(33, 37, 41);
+        color: rgb(252, 252, 252);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2em;
+        cursor: pointer;
+        transition: opacity 0.1s ease;
+        margin-bottom: 50px;
+    }
+
+    .team-socmed-container div:hover{
+        opacity: 0.8;
+    }
+
+    .team-text-footer{
+        font-family: "Roboto Slab", serif;
+        color: rgb(108, 117, 125);
+        margin-bottom: 20px;
+        font-size: 1em;
+        max-width: 720px;
+        text-align: center;
+        line-height: 1.5;
+    }
+
+    .team-text-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* FOOTER SECTION */
+    .footer-message-container{
+        background-color: rgb(33, 37, 41);
+        background-image: url(images/map-image.png);
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 80px 0;
+    }
+
+    .footer-logo-container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        place-items: center;
+        padding: 80px 100px;
+    }
+
+    .footer-logo-container img{
+        height: 50px;
+        cursor:pointer;
+    }
+
+    .footer-title{
+        font-family: Montserrat, sans-serif; 
+        color: rgb(252, 252, 252);
+        font-size: 2.50em;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-head-description{
+        text-align: center;
+        font-family: "Roboto Slab", serif;
+        color: rgb(108, 117, 125);
+        font-size: 1em;
+        margin-bottom: 50px;
+        font-weight: 400;
+        font-style: italic;
+    }
+
+    .footer-input-child{
+        display: flex;
+        flex-direction: column;
+        max-width: 600px;
+    }
+
+    .footer-input-child input{
+        margin-bottom: 40px;
+        height: 60px;
+        border-radius: 8px;
+        border: none;
+        padding-left: 15px;
+    }
+
+    .footer-input-child input::placeholder{
+        font-size: 1.20em;
+        font-weight: 600;
+        font-family: Montserrat, sans-serif;
+        color: rgb(108, 117, 125);
+    }
+
+    .footer-message-input-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 6em;
+        column-gap: 20px;
+        margin-bottom: 50px;
+    }
+
+    .footer-message-input-container textarea{
+        border-radius: 8px;
+        border: none;
+        padding: 20px 0 0 15px;
+        font-size: 1em;
+        max-height: 260px;
+    }
+
+    .footer-message-input-container textarea::placeholder{
+        font-size: 1em;
+        font-weight: 600;
+        font-family: Montserrat, sans-serif;
+        color: rgb(108, 117, 125);
+
+    }
+
+    .footer-send-message-btn{
+        height: 65px;
+        width: 220px;
+        border-radius: 8px;
+        border: none;
+        background-color: rgba(255, 200, 0, 0.90);
+        color: rgb(252, 252, 252);
+        font-weight: 600;
+        font-size: 1em;
+        font-family: Montserrat, sans-serif;
+        cursor: pointer;
+    }
+
+    .footer-btn-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footer-paragraph{
+        font-family: Montserrat, sans-serif;
+    }
+
+    .footer-logo2{
+        display: flex;
+        gap: 20px;
+    }
+
+    .footer-logo2 div{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        border-radius: 50%;
+        background-color: rgb(33, 37, 41);
+        cursor: pointer;
+    }
+
+    .footer-logo2 div i{
+        color: rgb(252, 252, 252);
+        font-size: 1.em;
+    }
+
+    .footer-container-part{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        place-items: center;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    @media (max-width: 1025px) {
+        .footer-message-input-container{
+            margin: 0 2em 2em 2em;
+        }
+    }
+
+    @media (max-width: 769px) {
+
+        .footer-logo-container{
+            grid-template-columns: repeat(1, 1fr);
+            place-content: center;
+            row-gap: 30px;
+        }
+
+        .footer-message-input-container{
+            grid-template-columns: repeat(2, 1fr);
+            place-content: center;
+            margin: 0 3em 2em 3em;
+        }
+
+        .footer-input-child input{
+            min-width: 300px;
+            height: 65px;
+            margin-bottom: 20px;
+        }
+
+        .footer-message-input-container textarea{
+            max-height:235px;
+            max-width: 350px;
+        }
+
+        .footer-head-description{
+            max-width: 300px;
+        }
+
+        .footer-container-part{
+            grid-template-columns: repeat(3, 1fr);
+            row-gap: 20px;
+            padding: 20px 10px;
+        }
+
+        .footer-container-title{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+     
+    }
+
+
+    @media (max-width: 481px) {
+
+        .footer-logo-container{
+            grid-template-columns: repeat(1, 1fr);
+            place-content: center;
+            row-gap: 30px;
+        }
+
+        .footer-message-input-container{
+            grid-template-columns: repeat(1, 1fr);
+            place-content: center;
+        }
+
+        .footer-input-child input{
+            min-width: 400px;
+            height: 65px;
+            margin-bottom: 20px;
+        }
+
+        .footer-message-input-container textarea{
+            min-height: 250px;
+            max-width: 400px;
+        }
+
+        .footer-head-description{
+            max-width: 300px;
+        }
+
+        .footer-container-part{
+            grid-template-columns: repeat(1, 1fr);
+            row-gap: 20px;
+        }
+
+        .footer-container-title{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+     
+    }
+
+     @media (max-width: 320px) {
+        .footer-message-input-container{
+            grid-template-columns: repeat(1, 1fr);
+            place-content: center;
+        }
+
+        .footer-input-child input{
+            min-width: 300px;
+            height: 65px;
+            margin-bottom: 20px;
+        }
+
+        .footer-message-input-container textarea{
+            min-height: 200px;
+        }
+
+        .footer-head-description{
+            max-width: 300px;
+        }
+
+        .footer-container-part{
+            grid-template-columns: repeat(1, 1fr);
+            row-gap: 20px;
+        }
+
+        .footer-logo-container{
+            grid-template-columns: repeat(1, 1fr);
+            place-content: center;
+            row-gap: 30px;
+        }
+    }
+
+   
+    
+
+    /* MEDIA QUERY SECTION */
+
+
+    @media (max-width: 1025px) {
+        .nav-for-logo {
+            width: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+        header {
+            padding-left: 0;
+        }
+        .nav-for-link button {
+            display: none;
+        }
+        .Welcome-To-Our-Studio {
+            font-family: "Roboto Slab", serif;
+            font-style: italic;
+            font-size: 38px;
+            margin-bottom: 10px;
+            font-weight: 400;
+            margin-top: 50px;
+        }
+        .NICE-TO-MEET-YOU {
+            font-family: "Montserrat", sans-serif;
+            font-size: 4.50em;
+            font-weight: 700;
+            text-align: center;
+            line-height: 1;
+            margin-bottom: 20px;
+        }
+        .tell-me-more {
+            height: 70px;
+            width: 230px;
+            border-radius: 10px; 
+            border: none;
+            background-color: rgb(255, 200, 0);
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+
+          /* SERVICE -SECTION */
+
+    .service-container,
+    .porfolio-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        }
+
+        .service,
+        .portfolio{
+            font-family: "Montserrat", sans-serif;
+            font-size: 2.10em;
+            color: rgb(33, 37, 41);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .service-description-header,
+        .portfolio-description-header{
+            font-family: "Roboto Slab", serif;
+            font-style: italic;
+            font-size: 1em;
+            color: rgb(108, 117, 125);
+            margin-bottom: 50px;
+            max-width: none;
+        
+        }
+
+        .service-logo-container{
+            height: 120px;
+            width: 120px;
+            background-color: rgb(255, 200, 0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 60px;
+            margin-bottom: 15px;
+        }
+
+        .service-logo-container i {
+            color: white;
+            font-size: 4em;
+        }
+
+        .service-title{
+            font-family: Montserrat, sans-serif;
+            color: rgb(33, 37, 41);
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .description-service{
+            color: rgb(108, 117, 125);
+            font-size: 1em;
+            font-family: "Roboto Slab", serif;
+            line-height: 2;
+            text-align: center;
+            
+        }
+
+        .child-container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+            padding: 0 15px;
+        }
+
+        .parent-container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            align-items: center;
+            justify-content: center;
+            column-gap: 20px;
+        }
+
+        /* PORTFOLIO SECTION DESIGN */
+
+        .portfolio-child-container img{
+            max-width: 310px;
+            margin-bottom: 20px;
+        }
+
+        .porfolio-img-title{
+            font-family: Montserrat, sans-serif; 
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .portfolio-img-description{
+            font-style: italic;
+            font-weight: 400;
+            color: rgb(108, 117, 125);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .porfolio-parent-container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 28px;
+            row-gap: 40px
+        }
+
+        .img-child{
+            bottom: 24px;
+        }
+
+        .img-child i{
+            font-size: 45px;
+        }
+
+        .portfolio-child-container article{
+          margin-top: -24px;
+        }
+
+        /* TEAM SECTION */
+
+        .team-body-container{
+            column-gap: 100px;
+            place-content: center;
+       }
+}
+
+    /* Medium devices (landscape tablets, 769px and down) */
+
+    @media (max-width: 769px) {
+    .nav-for-link a {
+        display: none;
+    }
+    .nav-for-logo {
+        width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    header {
+        padding-left: 0;
+    }
+    .nav-for-link button {
+        display: flex;
+    }
+    .Welcome-To-Our-Studio {
+        font-family: "Roboto Slab", serif;
+        font-style: italic;
+        font-size: 38px;
+        margin-bottom: 10px;
+        font-weight: 400;
+        margin-top: 50px;
+    }
+    .NICE-TO-MEET-YOU {
+        font-family: "Montserrat", sans-serif;
+        font-size: 4.50em;
+        font-weight: 700;
+        text-align: center;
+        line-height: 1;
+        margin-bottom: 20px;
+    }
+    .tell-me-more {
+        height: 70px;
+        width: 230px;
+        border-radius: 10px; 
+        border: none;
+        background-color: rgb(255, 200, 0);
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+  /* SERVICE -SECTION */
+
+  .service-container,
+  .porfolio-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    }
+
+    .service,
+    .portfolio{
+        font-family: "Montserrat", sans-serif;
+        font-size: 2.10em;
+        color: rgb(33, 37, 41);
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .service-description-header,
+    .portfolio-description-header{
+        font-family: "Roboto Slab", serif;
+        font-style: italic;
+        font-size: 1em;
+        color: rgb(108, 117, 125);
+        margin-bottom: 40px;
+        max-width: none;
+    
+    }
+
+    .service-logo-container{
+        height: 120px;
+        width: 120px;
+        background-color: rgb(255, 200, 0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 60px;
+        margin-bottom: 15px;
+    }
+
+    .service-logo-container i {
+        color: white;
+        font-size: 4em;
+    }
+
+    .service-title{
+        font-family: Montserrat, sans-serif;
+        color: rgb(33, 37, 41);
+        margin-bottom: 15px;
+        text-align: center;
+
+    }
+
+    .description-service{
+        color: rgb(108, 117, 125);
+        font-size: 1em;
+        font-family: "Roboto Slab", serif;
+        line-height: 2;
+        text-align: center;
+        
+    }
+
+    .child-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+        padding: 0 15px;
+    }
+
+    .parent-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        justify-content: center;
+        column-gap: 20px;
+    }
+
+    .push-down{
+        margin-top: 32px;
+    }
+
+    /* TEAM SECTION */
+
+    .team-title{
+        font-size: 2.3em;
+    }
+    
+    .team-body-container{
+        grid-template-columns: repeat(1, 1fr);
+        place-content: center;
+        margin-bottom: 10px;
+    }
+
+    /* PORTFOLIO SECTION DESIGN */
+
+    .portfolio-child-container img{
+        max-width: 350px;
+        margin-bottom: 20px;
+    }
+
+    .porfolio-img-title{
+        font-family: Montserrat, sans-serif; 
+        text-align: center;
+        margin-bottom: 10px;
+        color: rgb(33, 37, 41);
+    }
+
+    .portfolio-img-description{
+        font-style: italic;
+        font-weight: 400;
+        color: rgb(108, 117, 125);
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .porfolio-parent-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 28px;
+    }
+        
+    }
+
+/* Small devices (portrait tablets and large phones, 481px and down) */
+
+@media (max-width: 481px) {
+    .nav-for-link a {
+        display: none;
+    }
+    .nav-for-logo {
+        width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    header {
+        padding-left: 0;
+    }
+    .nav-for-link button {
+        display: flex;
+    }
+    .Welcome-To-Our-Studio {
+        font-family: "Roboto Slab", serif;
+        font-style: italic;
+        font-size: 24px;
+        margin-bottom: 12px;
+        font-weight: 400;
+        margin-top: 50px;
+    }
+    .NICE-TO-MEET-YOU {
+        font-family: "Montserrat", sans-serif;
+        font-size: 3.20em;
+        font-weight: 700;
+        text-align: center;
+        line-height: 1;
+        margin-bottom: 20px;
+    }
+    .tell-me-more {
+        height: 70px;
+        width: 230px;
+        border-radius: 10px; 
+        border: none;
+        background-color: rgb(255, 200, 0);
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+     /* SERVICE -SECTION */
+
+     .service-container,
+     .porfolio-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .service,
+    .portfolio{
+        font-family: "Montserrat", sans-serif;
+        font-size: 2.10em;
+        color: rgb(33, 37, 41);
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .service-description-header,
+    .portfolio-description-header{
+        font-family: "Roboto Slab", serif;
+        font-style: italic;
+        font-size: 1em;
+        color: rgb(108, 117, 125);
+        margin-bottom: 50px;
+        max-width: none;
+    }
+
+
+    .service-logo-container{
+        height: 120px;
+        width: 120px;
+        background-color: rgb(255, 200, 0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 60px;
+        margin-bottom: 15px;
+    }
+
+    .service-logo-container i {
+        color: white;
+        font-size: 4em;
+    }
+
+    .service-title{
+        font-family: Montserrat, sans-serif;
+        color: rgb(33, 37, 41);
+        margin-bottom: 15px;
+    }
+
+    .description-service{
+        color: rgb(108, 117, 125);
+        font-size: 1em;
+        font-family: "Roboto Slab", serif;
+        line-height: 2;
+        text-align: center;
+        
+    }
+
+    .child-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .parent-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-content: center;
+    }
+
+     /* PORTFOLIO SECTION DESIGN */
+
+     .portfolio-child-container img{
+        max-width: 430px;
+        margin-bottom: 20px;
+    }
+
+    .porfolio-img-title{
+        font-family: Montserrat, sans-serif; 
+        text-align: center;
+        margin-bottom: 10px;
+        color:  rgb(33, 37, 41);
+    }
+
+    .portfolio-img-description{
+        font-style: italic;
+        font-weight: 400;
+        color: rgb(108, 117, 125);
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .porfolio-parent-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .timeline-body-container{
+        grid-template-columns: 1fr 3px; 
+    }
+
+    /* TEAM SECTION */
+
+    .team-title{
+        font-size: 2.3em;
+    }
+    
+    .team-body-container{
+        grid-template-columns: repeat(1, 1fr);
+        place-content: center;
+        margin-bottom: 10px;
+    }
+ 
+    .team-text-footer{
+    margin: 0 20px;
+    }
+}
+
+     /* Medium devices (landscape tablets, 320px and down) */
+
+    @media (max-width: 320px) {
+    .nav-for-link a {
+        display: none;
+    }
+    .nav-for-logo {
+        width: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    header {
+        padding-left: 0;
+    }
+    .nav-for-link button {
+        display: flex;
+    }
+    .Welcome-To-Our-Studio {
+        font-family: "Roboto Slab", serif;
+        font-style: italic;
+        font-size: 22px;
+        margin-bottom: 10px;
+        font-weight: 400;
+        margin-top: 50px;
+    }
+    .NICE-TO-MEET-YOU {
+        font-family: "Montserrat", sans-serif;
+        font-size: 3.20em;
+        font-weight: 700;
+        text-align: center;
+        line-height: 1;
+        margin-bottom: 20px;
+    }
+    .tell-me-more {
+        height: 70px;
+        width: 230px;
+        border-radius: 10px; 
+        border: none;
+        background-color: rgb(255, 200, 0);
+        color: white;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    /* SERVICE -SECTION */
+
+    .service-container,
+    .porfolio-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .service,
+    .portfolio{
+        font-family: "Montserrat", sans-serif;
+        font-size: 2.10em;
+        color: rgb(33, 37, 41);
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .service-description-header,
+    .portfolio-description-header{
+        font-family: "Roboto Slab", serif;
+        font-style: italic;
+        font-size: 1em;
+        color: rgb(108, 117, 125);
+        margin-bottom: 50px;
+        max-width: 220px; 
+        text-align: center;
+    }
+
+    .service-logo-container{
+        height: 120px;
+        width: 120px;
+        background-color: rgb(255, 200, 0);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 60px;
+        margin-bottom: 15px;
+    }
+
+    .service-logo-container i {
+        color: white;
+        font-size: 4em;
+    }
+
+    .service-title{
+        font-family: Montserrat, sans-serif;
+        color: rgb(33, 37, 41);
+        margin-bottom: 15px;
+    }
+
+    .description-service{
+        color: rgb(108, 117, 125);
+        font-size: .90em;
+        font-family: "Roboto Slab", serif;
+        line-height: 2;
+        text-align: center;
+    }
+
+    .child-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+
+    .parent-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* PORTFOLIO SECTION DESIGN */
+
+    .portfolio-child-container img{
+        max-width: 280px;
+        margin-bottom: 20px;
+    }
+
+    .porfolio-img-title{
+        font-family: Montserrat, sans-serif; 
+        text-align: center;
+        margin-bottom: 10px;
+        color:  rgb(33, 37, 41);
+    }
+
+    .portfolio-img-description{
+        font-style: italic;
+        font-weight: 400;
+        color: rgb(108, 117, 125);
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .porfolio-parent-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* ABOUT SECTION DESIGN */
+
+    .about-child-container img {
+        border-radius: 50%;
+        max-height: 80px;
+        border: 7px solid rgb(233, 236, 239);
+    }
+
+    .about-child-container{
+        display: grid;
+        grid-template-columns: repeat(2, 100px 200px);
+    }
+
+    /* TEAM SECTION */
+    
+
+       .team-title{
+            font-size: 2.3em;
+        }
+        
+        .team-body-container{
+            grid-template-columns: repeat(1, 1fr);
+            place-content: center;
+            margin-bottom: 10px;
+         }
+     
+}
+
+
+
+    
+
+    
+
+    
